@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadir Kakız | Yapay Zeka Geliştiricisi</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: #fdf2f1;
+            border-left: 5px solid var(--accent-color);
+            border-radius: 4px;
+        }
+
+        .grid-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary-color);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "👉";
+            position: absolute;
+            left: 0;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kadir Kakız 🤖</h1>
+        <p>Antalya, Türkiye 📍</p>
+        <p style="margin-top: 1rem;">Tutkulu bir öğrenci, yapay zeka geliştiricisi adayı ve Elektrik-Elektronik Mühendisliği öğrencisi. ⚡</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="quote">
+            "Bir çocuğun gülümsemesi dünyadaki en güzel şeydir." <br> – Kadir Kakız
+        </div>
+
+        <section id="hakkimda">
+            <h2>Hakkımda 🎓</h2>
+            <p>Antalya Bilim Üniversitesi'nde Elektrik-Elektronik Mühendisliği eğitimi alıyorum. Veri bilimi, makine öğrenmesi ve yapay zeka (AI) konularında bilgi ve tecrübe edinmeye odaklanmış durumdayım. BTK Akademi'nin <strong>"Python ile Makine Öğrenmesi Uygulamaları"</strong> kursunu tamamladım ve teoriyi gerçek dünya uygulamalarıyla birleştiren projeler üzerinde çalışıyorum.</p>
+            <br>
+            <p>Sadece teknik bir insan değilim; klasik gitar çalıyor, Muay Thai yapıyor, doğada ve antik tarihi mekanlarda vakit geçirmekten keyif alıyorum 🌿🏛️. Empatiye, eğitimin gücüne ve özellikle genç öğrencilerin hayatına dokunmaya büyük önem veriyorum.</p>
+        </section>
+
+        <section id="calisma-alanlari">
+            <h2>Çalışma ve İlgi Alanları 🤖</h2>
+            <div class="grid-list">
+                <div class="card">
+                    <h3>Veri Bilimi ve Yapay Zeka 📊</h3>
+                    <p>Karmaşık makine öğrenmesi konularını (PCA, KNN, Karar Ağaçları vb.) yeni başlayanlar için görsel açıklamalar ve Python kodlarıyla basitleştiriyorum.</p>
+                </div>
+                <div class="card">
+                    <h3>Eğitim ve Rehberlik 📚</h3>
+                    <p>Görsel anlatımlı çalışma notları hazırlıyor ve bu bilgileri öğrenmek isteyen gençlerle, çocuklarla paylaşarak kapsayıcı eğitime destek veriyorum.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeler">
+            <h2>İçerikler ve Projeler 📺</h2>
+            <p style="margin-bottom: 1rem;">Youtube ve kişisel çalışmalarım kapsamında hazırladığım, başlangıç seviyesine dost eğitim içerikleri:</p>
+            <ul>
+                <li><strong>📘 Python ile Makine Öğrenmesi Projeleri</strong> – Yeni başlayanlar için adım adım uygulamalar.</li>
+                <li><strong>🧩 Algoritmaları Anlamak</strong> – PCA, KNN ve Karar Ağaçları için görsel ve kod tabanlı açıklamalar.</li>
+                <li><strong>🎓 BTK Akademi ML Kursu Notları</strong> – Detaylı, grafikli ve Python kod örnekli çalışma belgeleri.</li>
+            </ul>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #7f8c8d;"><em>Not: Görsel makine öğrenmesi rehberlerine ve proje not defterlerine erişim talep etmek için benimle iletişime geçebilirsiniz.</em></p>
+        </section>
+
+        <section id="iletisim" style="text-align: center;">
+            <h2>İletişim 📬</h2>
+            <p style="margin-bottom: 1.5rem;">Benimle projeler, yapay zeka üzerine sohbetler veya eğitim materyalleri için iletişime geçebilirsiniz.</p>
+            <a href="mailto:kadirkakiz@gmail.com" class="contact-btn">📧 kadirkakiz@gmail.com</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kadir Kakız. Tüm hakları saklıdır. İyiliğin ve empatinin gücüyle tasarlandı.</p>
+    </footer>
+
+</body>
+</html>
